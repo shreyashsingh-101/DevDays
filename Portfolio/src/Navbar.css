@@ -1,0 +1,31 @@
+.navbar {
+  color: white;
+  height: 60px;
+  width: 100%;
+  background-color: rgb(26, 28, 51);
+  box-shadow: 0 0 20px 1px rgba(15, 15, 15, 0.589);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+}
+
+.logo{
+    width: 40px;
+    cursor: pointer;
+}
+
+.link{
+    text-decoration: none;
+    padding: 10px;
+    color: violet;
+    margin: 20px;
+    transition: all 100ms ease-in-out;
+    transition-delay: 100ms;
+}
+
+.link:hover{
+    border-bottom: 5px solid violet;
+}

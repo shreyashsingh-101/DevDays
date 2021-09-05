@@ -1,0 +1,19 @@
+
+
+.connect{
+    margin-top: 50px;
+    height: 90vh;
+}
+
+.heading{
+    height: 60px;
+    background-color: black;
+    padding: 13px 40px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.heading:hover{
+    border-bottom: 4px solid violet;
+}

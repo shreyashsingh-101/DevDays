@@ -1,0 +1,48 @@
+.landing{
+    display: flex;
+    height: 94vh;
+    width: 98vw;
+}
+
+.left{
+    flex: .6;
+    color: #fff;
+    padding: 200px 40px;
+}
+
+.name{
+    color: violet;
+}
+
+.left h2{
+    font-size: 60px;
+}
+
+.job__des{
+    color: violet;
+}
+.left h3{
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.right{
+    flex: 1;
+    background-image: url('assets/land1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 80px;
+    padding: 170px 0px;
+}
+
+.type{
+    padding: 80px 40px;
+    background-color: rgba(0, 0, 0, 0.582);
+}
+
+@media (max-width:700px){
+    .right{
+        display: none;
+    }
+}
