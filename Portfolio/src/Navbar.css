@@ -13,20 +13,34 @@
   z-index: 20;
 }
 
-.logo{
-    width: 40px;
-    cursor: pointer;
+.logo {
+  width: 40px;
+  cursor: pointer;
 }
 
-.link{
-    text-decoration: none;
-    padding: 10px;
-    color: violet;
-    margin: 20px;
-    transition: all 100ms ease-in-out;
-    transition-delay: 100ms;
+.link {
+  text-decoration: none;
+  padding: 10px;
+  color: violet;
+  margin: 20px;
+  transition: all 100ms ease-in-out;
+  transition-delay: 100ms;
+  cursor: pointer;
 }
 
-.link:hover{
-    border-bottom: 5px solid violet;
+.link:hover {
+  border-bottom: 5px solid violet;
+}
+
+.active {
+  border-bottom: 5px solid violet;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 0 20px;
+  }
+  .link {
+    margin: 10px;
+  }
 }

@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 
 const Landing = () => {
   return (
-    <div className="landing">
+    <div id="home"className="landing">
       <div className="left">
         <h2>
           Hey, I'm <span className="name">Shreyash</span>

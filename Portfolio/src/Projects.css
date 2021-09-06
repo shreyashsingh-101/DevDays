@@ -1,5 +1,38 @@
 
 .projects{
-    margin-top:50px;
-    height: 90vh;
+  
+    min-height: 40vh;
+}
+
+.project__card{
+    width: 260px;
+    min-height: 280px;
+    height: 300px;
+    max-height: 340px;
+    max-width: 350px;
+    margin: 50px 20px;
+}
+a{
+    text-decoration: none;
+}
+
+
+.card__row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding: 40px 100px;
+}
+
+.card__image{
+    height: 140px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 700px){
+    .card__row{
+        padding: 0;
+    }
 }
