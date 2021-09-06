@@ -13,7 +13,7 @@ const Card_pro = (props) => {
     return (
         <Card className="project__card">
           <CardActionArea>
-           <img className="card__image"  src={'assets/' + props.img} />
+           <img className="card__image"  src={props.img} />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
                 {props.title}
