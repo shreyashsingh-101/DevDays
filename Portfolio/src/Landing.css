@@ -28,7 +28,7 @@
 
 .right{
     flex: 1;
-    background-image: url('land1.jpg');
+    background-image: url('public/land1.jpg');
     background-size: cover;
     background-position: center;
     color: white;
