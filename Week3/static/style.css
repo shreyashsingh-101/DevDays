@@ -51,3 +51,15 @@ input {
 label {
   color: white;
 }
+
+.submit-btn{
+  margin-top: 20px;
+  padding: 8px 20px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-btn:hover{
+  background-color: grey;
+}
