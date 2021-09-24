@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/7c58a17dae.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container" style="display: none">
+      <div class="heading">TO-DO LIST</div>
+      <div class="user">User: <span class="uname"></span></div>
+      <div class="home_btns">
+        <a href="/add"><button class="h_btn">Add TO-DOs</button></a>
+        <a href="/all"><button class="h_btn">List TO-DOs</button></a>
+      </div>
+    </div>
+
+    <div class="sawo">
+      <div id="sawo-container"></div>
+    </div>
+
+    <!-- SAWO Integration -->
+
+    <script src="https://websdk.sawolabs.com/sawo.min.js"></script>
+    <script>
+      var config = {
+        containerID: "sawo-container",
+        identifierType: "phone_number_sms",
+        apiKey: "a4252dca-a43e-4127-bb08-db370cf9609e",
+        onSuccess: (payload) => {
+          document.querySelector(".container").style.display = "flex";
+          document.querySelector(".sawo").style.display = "none";
+          document.querySelector('.uname').innerHTML = payload.identifier;
+        },
+      };
+      var sawo = new Sawo(config);
+      sawo.showForm();
+    </script>
+  </body>
+</html>
