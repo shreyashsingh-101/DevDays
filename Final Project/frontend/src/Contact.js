@@ -10,7 +10,7 @@ const Contact = () => {
       
         <section id="contact">
           <div className="contact-wrapper">
-            <form id="contact-form" className="form-horizontal" role="form">
+            <form id="contact-form" className="form-horizontal">
               <div className="form-group">
                 <div className="col-sm-12">
                   <input
