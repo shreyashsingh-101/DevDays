@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Redirect } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "./Home.css";
 import Navbar from "./Navbar";
 import Sawo from "sawo";
@@ -7,15 +7,14 @@ import Sawo from "sawo";
 const Home = () => {
   useEffect(() => {
     var config = {
-      
       containerID: "sawo-container",
-      
+
       identifierType: "phone_number_sms",
-      
+
       apiKey: "3ea82165-8136-4a7a-bf44-2d4d88a74b48",
-      
+
       onSuccess: (payload) => {
-        <Redirect to="/chat" />
+        window.location.href = "/chat";
       },
     };
     let sawo = new Sawo(config);
@@ -30,6 +29,8 @@ const Home = () => {
           <div className="login">
             <div id="sawo-container"></div>
           </div>
+
+         
         </div>
         <div className="right">
           <img src="land.png" />
